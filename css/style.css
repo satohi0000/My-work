@@ -176,9 +176,16 @@ body {
   font-family: "Crimson Pro", serif;
 }
 
-.l-contents_main {
-  max-width: 1000px;
-  margin: 0 auto;
+.l-contents_main_picture {
+  max-width: 1920px;
+  width: 100%;
+}
+
+.l-contents_main_picture img {
+  width: 100%;
+  height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .l-contents_main_concept, .l-contents_main_work {
@@ -194,21 +201,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-
-.l-contents_main_concept_picture, .l-contents_main_work_picture {
-  width: 50%;
-}
-
-@media (max-width: 767px) {
-  .l-contents_main_concept_picture, .l-contents_main_work_picture {
-    width: 90vw;
-    margin: 0 auto;
-  }
-}
-
-.l-contents_main_concept_picture img, .l-contents_main_work_picture img {
-  width: 100%;
 }
 
 .l-contents_main_concept_sentence, .l-contents_main_work_sentence {
@@ -442,45 +434,53 @@ body {
   width: 100%;
 }
 
-.l-header_picture {
-  width: 90vw;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin: 4% auto 0 auto;
-  max-width: 100%;
-}
-
-@media (max-width: 767px) {
-  .l-header_picture {
-    width: 100%;
-    height: 23.5vh;
-    margin: 0;
-  }
-}
-
-.l-header_picture img {
-  width: 100%;
-  height: 100%;
+.l-header {
+  width: 75vw;
+  margin: 0 auto;
 }
 
 .l-header_menu {
+  padding-top: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90vw;
-  margin: 30px auto 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
 }
 
 .l-header_menu_title {
-  width: 110px;
-  margin: 0 50px 0 0;
+  width: 120px;
+  background-repeat: no-repeat;
 }
 
 .l-header_menu_title img {
   width: 100%;
 }
 
-.l-header_menu_1, .l-header_menu_2, .l-header_menu_3 {
+.l-header_menu_select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.l-header_menu_select_1, .l-header_menu_select_2, .l-header_menu_select_3, .l-header_menu_select_4 {
+  font-size: 14.4px;
   margin-right: 30px;
+  margin-top: 10px;
+}
+
+.l-header_menu_select_png {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.l-header_menu_select_png img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
