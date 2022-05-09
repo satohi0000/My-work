@@ -64,6 +64,7 @@
           @include tab {
             width: 100%;
           }
+
           justify-content: space-between;
           margin-bottom: 23px;
           img {
@@ -99,9 +100,10 @@
           flex-wrap: wrap;
           border-top: solid 1px #707070;
           justify-content: space-between;
+          width: 100%;
         }
         dt {
-          width: 18%;
+          width: 18.4%;
           border-bottom: solid 1px #707070;
           padding: 15px 0 15px 15px;
           @include tab {
@@ -111,8 +113,8 @@
           }
         }
         dd {
-          width: calc(100% / 1.25);
-          padding: 15px 0 15px 15px;
+          width: 79%;
+          padding: 15px 0 15px 0px;
           border-bottom: solid 1px #707070;
           @include tab {
             padding: 0 0 15px 15px;
