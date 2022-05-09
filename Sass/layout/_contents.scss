@@ -1,4 +1,44 @@
 .l-contents {
+  &_works {
+    width: 75vw;
+    margin: 0 auto;
+    &_title {
+      font-size: 24px;
+      font-weight: bold;
+      padding-top: 70px;
+      text-align: center;
+    }
+    &_pictures {
+      padding-top: 65px;
+      @include tab {
+        padding-top: 40px;
+        flex-direction: column;
+      }
+      width: 100%;
+      &_1,
+      &_2 {
+        width: 100%;
+        margin-bottom: 23px;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    &_sentence {
+      padding-bottom: 140px;
+      h2 {
+        font-size: 14.4px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 14.4px;
+      }
+      &_p {
+        padding-bottom: 72px;
+      }
+    }
+  }
   &_about {
     width: 75vw;
     @include tab {
