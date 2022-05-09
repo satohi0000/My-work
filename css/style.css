@@ -445,6 +445,11 @@ body {
   background-color: #24292e;
 }
 
+.l-contents_main_contact_form_button input:hover {
+  color: #24292e;
+  background-color: white;
+}
+
 .l-contents_page {
   max-width: 100%;
   display: -webkit-box;

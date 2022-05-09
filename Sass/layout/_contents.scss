@@ -182,6 +182,10 @@
             width: 200px;
             height: 45px;
             background-color: #24292e;
+            &:hover {
+              color: #24292e;
+              background-color: white;
+            }
           }
         }
       }
